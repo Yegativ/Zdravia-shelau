@@ -12,4 +12,4 @@ elif den == 24:
     print("Полночь")
 elif den >=1 and den <=5:
     print("Ночь")
-
+print("пака пака")
