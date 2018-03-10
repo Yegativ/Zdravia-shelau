@@ -1,15 +1,11 @@
-den = int(input("Сколько сейчас времени"))
+den = int(input("Введите день"))
+mecac = int(input("Введите месяц"))
+god = int(input("Введите год"))
 
-if den >=4 and den <=9:
-    print("утро")
-elif den == 12:
-    print("Полдень")
-elif den >=13 and den <=15:
-    print("Обед")
-elif den >= 18 and den <= 23 :
-    print("Вечер")
-elif den == 24:
-    print("Полночь")
-elif den >=1 and den <=5:
-    print("Ночь")
-print("пака пака")
+if den > 0 and den <10 or den >10 and den <=31 and mecac >=1 and mecac <3 or mecac >3 and mecac <=12 and god >=0 and god < 2018 or god >2018:
+    print("Верная дата!")
+elif den == 10 and mecac == 3 and god == 2018:
+    print("Дата показывает сегоднешний день!")
+else:
+    print("Неверная дата!")
+print("пака-пака!")
