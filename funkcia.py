@@ -7,7 +7,7 @@ def main():
         if money !="":
             money1 = int(money)
             for i in range (1,count1+1):
-                    while proverka(money1) != True:
+                    while proverka(money1) == True:
                         money=input("Введите ценность банкноты")
                         if money !="":
                             money1 = int(money)
@@ -17,11 +17,11 @@ def main():
     
     
     
-def proverka(money1):
+def proverka(money):
     if money ==200 or money == 500 or money == 1000 or money == 2000 or money == 5000 or money == 10000 or money == 20000:
         return True
     else:
-        print("Фу фальшивомонетчик")
+        print("Фу фальшивомонетчик, вызываю ментов, земля тебе пухом братишка")
         return False
 def result(sum):
     print(sum)
